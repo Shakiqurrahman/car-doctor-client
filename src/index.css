@@ -8,7 +8,13 @@
 }
 
 .btn-stroke{
-  @apply text-[#FF3811] px-4 py-2 rounded-md border border-[#FF3811] tracking-wide font-semibold hover:text-white hover:bg-[#FF3811] duration-300
+  @apply text-[#FF3811] px-5 py-2.5 rounded-md border border-[#FF3811] tracking-wide font-semibold hover:text-white hover:bg-[#FF3811] duration-300
+}
+.btn-stroke-white{
+  @apply text-white px-5 py-2.5 rounded-md border border-white tracking-wide font-medium hover:bg-white duration-300 hover:text-[#FF3811]
+}
+.btn-filled{
+  @apply text-white px-5 py-2.5 rounded-md border bg-[#FF3811] border-[#FF3811] tracking-wide font-medium hover:text-[#FF3811] hover:bg-white duration-300
 }
 
 .active {
