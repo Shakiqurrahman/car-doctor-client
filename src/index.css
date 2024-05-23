@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Poppins Font */
+@layer {
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+}
+
+.btn-stroke{
+  @apply text-[#FF3811] px-4 py-2 rounded-md border border-[#FF3811] tracking-wide font-semibold hover:text-white hover:bg-[#FF3811] duration-300
+}
+
+.active {
+  @apply text-[#FF3811]
+}
+
+
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
