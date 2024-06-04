@@ -3,14 +3,14 @@ import servicesData from "../services.json"
 import ServiceCard from './ServiceCard';
 
 const Services = () => {
-  const [services, setServices] = useState(servicesData);
+  const [services, setServices] = useState([]);
 
-  // useEffect(() => {
-  //   fetch('/services.json')
-  //     .then((response) => response.json())
-  //     .then((data) => setServices(data))
-  //     .catch((error) => console.error('Error fetching data:', error));
-  // }, []);
+  useEffect(() => {
+    fetch('http://localhost:8000/api/services')
+      .then((response) => response.json())
+      .then((data) => setServices(data))
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
   return (
     <div className="mb-32 container">
       <div className="text-center space-y-5 md:w-1/2 mx-auto mb-12">
