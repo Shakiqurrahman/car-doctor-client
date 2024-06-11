@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="md:w-1/2">
           <img className="mx-auto" src={logo} alt="logo" />
           <p className="text-center mt-2">
-            Edwin Diaz is a software and web technologies engineer, a life coach
+            Shakiqur is a software and web technologies engineer, a life coach
             trainer who is also a serial .
           </p>
           <div className="flex gap-2 mx-auto mt-4">
